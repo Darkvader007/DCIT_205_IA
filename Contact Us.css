@@ -1,0 +1,65 @@
+*{
+    font-family: 'Poppins',sans-serif;
+}
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: center;
+}
+nav img{
+    width:150px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: "";
+    width:0;
+    height:2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.cta{
+    margin: 100px auto;
+    width:60%;
+    background-image:url("https://geekforceusa.com/wp-content/uploads/2020/06/It-Professionals.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+   color: #0c0909;
+   margin-bottom: 40px;
+   padding: 0; 
+}
+@media(max-width:700px){
+    .cta h1{
+        font-size:24px ;
+    }
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    
+
+}
